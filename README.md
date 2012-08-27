@@ -2,16 +2,16 @@
 A python script to manage a reverse SSH tunnel by checking a google document.
 
 ## What? Why?
-SSH reverse tunneling creates a way to connect back to the host that initiated
-the connection. See [revtun] [] for more. This script allows a tunnel to be
-controlled by the contents of a google document. Why? Because I'd rather not
-keep an ssh tunnel to ... semi-public machines open all the time.
+[SSH reverse tunneling] [revtun] creates a way to connect back to the host that
+initiated the connection. This script allows a tunnel to be controlled by the
+contents of a google document. Why? Because I'd rather not keep an ssh tunnel
+to ... semi-public machines open all the time.
 
 ## Setup
 You'll need
-* python with the [gdata] [] module installed. Preferably 2.0.17 (or higher).
+* python with the [Google Data] [gdata] module installed. Preferably 2.0.17 (or higher).
 * [autossh] []; this keeps the ssh client running.
-* see [revtun] [] to make sure you know what's going on and what needs to be
+* see [the page on reverse tunneling] [revtun] to make sure you know what's going on and what needs to be
   the case for reverse tunneling to work.
 
 Once you've got these set up, you'll need to create a setup.py. Here's an example:
