@@ -70,8 +70,12 @@ def main():
     conn = None
     while True:
         print("checking... ")
-        req = get_tunnel_state_req()
-        print("checked.")
+        req = False
+        try:
+            req = get_tunnel_state_req()
+            print("checked.")
+        except:
+            print("failed, skipping.")
         #only 2 things action is needed on -
         #tunnel is inactive and is req'd on
         if (not conn) and req:
